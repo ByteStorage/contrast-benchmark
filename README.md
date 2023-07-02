@@ -4,6 +4,7 @@ Based on the results of a simple benchmark test of the open source kv database w
 
 ## Test database:
 
+- [flydb](https://github.com/ByteStorage/FlyDB)
 - [bbolt](https://github.com/etcd-io/bbolt)
 - [goleveldb](https://github.com/syndtr/goleveldb)
 - [nutsdb](https://github.com/nutsdb/nutsdb)
@@ -43,6 +44,10 @@ Benchmark_PutValue_NutsDB
 Benchmark_PutValue_NutsDB-16       	   78801	     13582 ns/op	    3242 B/op	      22 allocs/op
 Benchmark_GetValue_NutsDB
 Benchmark_GetValue_NutsDB-16       	  373124	      5702 ns/op	    1392 B/op	      14 allocs/op
+Benchmark_PutValue_RoseDB
+Benchmark_PutValue_RoseDB-16       	   69776	     19166 ns/op	    6242 B/op	      59 allocs/op
+Benchmark_GetValue_RoseDB
+Benchmark_GetValue_RoseDB-16       	 4155183	     298.0 ns/op	     167 B/op	       4 allocs/op
 Benchmark_PutValue_Pebble
 Benchmark_PutValue_Pebble-16       	   91304	     21877 ns/op	    2720 B/op	       8 allocs/op
 Benchmark_GetValue_Pebble
